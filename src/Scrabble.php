@@ -18,7 +18,8 @@
 
             $dictionary = (file_get_contents('https://docs.oracle.com/javase/tutorial/collections/interfaces/examples/dictionary.txt'));
             $real_words = explode("\n",$dictionary);
-            if (in_array($lc_word, $real_words)) {
+
+            if (in_array($lc_word, $real_words) || (count($split) == 1)) {
                 foreach($split as $letter) {
                     if (in_array($letter, $one_points)) {
                         $letter = 1;
@@ -40,7 +41,7 @@
                   array_push($numbers_now, $letter);
                 }
             } else {
-                return "That's not a real word, cheater!";
+                return "That's not a valid Scrabble word!";
             }
 
             $output = array_sum($numbers_now) . ' points!';

@@ -61,7 +61,7 @@
             $result = $test_Scrabble->scoreWord($input);
 
             //Assert
-            $this->assertEquals("That's not a real word, cheater!", $result);
+            $this->assertEquals("That's not a real, cheater!", $result);
         }
 
 
