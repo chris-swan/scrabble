@@ -1,0 +1,21 @@
+Interface: Form with an input field for the user's word. After submitting their word, the app outputs the scrabble score.
+
+1.  Behavior: one input, one letter
+    Input: 'I'
+    Output: 1
+
+2.  Behavior: two letters, same category
+    Input: 'in'
+    Output: 2
+
+3.  Behavior: multiple letters, multiple categories
+    Input: 'go'
+    Output: 3
+
+4.  Behavior: several letters, multiple categories
+    Input: 'bog'
+    Output: 6
+
+5.  Behavior: non-letter characters
+    Input: 'bog7'
+    Output: 6
