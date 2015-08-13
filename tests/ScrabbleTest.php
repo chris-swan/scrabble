@@ -51,6 +51,18 @@
             //Assert
             $this->assertEquals(7, $result);
         }
+        function test_scoreWord_ignore_nonword()
+        {
+            //Arrange
+            $test_Scrabble = new Scrabble;
+            $input = 'ink7er';
+
+            //Act
+            $result = $test_Scrabble->scoreWord($input);
+
+            //Assert
+            $this->assertEquals("That's not a real word, cheater!", $result);
+        }
 
 
     }

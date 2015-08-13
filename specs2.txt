@@ -12,6 +12,10 @@ Interface: Form with an input field for the user's word. After submitting their 
     Input: 'ink'
     Output: 7
 
-4.  Behavior: non-letter characters
+4.  Behavior: non-letter characters are ignored.
     Input: 'ink7'
     Output: 7
+
+5.  Behavior: non-word entries are not scored.
+    Input: 'akl;sjaasd'
+    Output: 'That's not a real word, cheater!'
