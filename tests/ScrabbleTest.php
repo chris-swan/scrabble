@@ -15,5 +15,43 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+        function test_scoreWord_twoLetters()
+        {
+            //Arrange
+            $test_Scrabble = new Scrabble;
+            $input = 'in';
+
+            //Act
+            $result = $test_Scrabble->scoreWord($input);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+        function test_scoreWord_ThreeLetters_difCat()
+        {
+            //Arrange
+            $test_Scrabble = new Scrabble;
+            $input = 'ink';
+
+            //Act
+            $result = $test_Scrabble->scoreWord($input);
+
+            //Assert
+            $this->assertEquals(7, $result);
+        }
+        function test_scoreWord_ignore_non_value_character()
+        {
+            //Arrange
+            $test_Scrabble = new Scrabble;
+            $input = 'ink7';
+
+            //Act
+            $result = $test_Scrabble->scoreWord($input);
+
+            //Assert
+            $this->assertEquals(7, $result);
+        }
+
+
     }
  ?>

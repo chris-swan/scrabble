@@ -9,13 +9,9 @@ Interface: Form with an input field for the user's word. After submitting their 
     Output: 2
 
 3.  Behavior: multiple letters, multiple categories
-    Input: 'go'
-    Output: 3
+    Input: 'ink'
+    Output: 7
 
-4.  Behavior: several letters, multiple categories
-    Input: 'bog'
-    Output: 6
-
-5.  Behavior: non-letter characters
-    Input: 'bog7'
-    Output: 6
+4.  Behavior: non-letter characters
+    Input: 'ink7'
+    Output: 7
