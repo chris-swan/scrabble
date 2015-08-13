@@ -1,0 +1,17 @@
+Interface: Form with an input field for the user's word. After submitting their word, the app outputs the scrabble score.
+
+1.  Behavior: Convert user's word to all lower case letters.
+    Input: 'I'
+    Output: 'i'
+
+2.  Behavior: Split user's word into component letters.
+    Input: 'in'
+    Output: 'i','n'
+
+3.  Behavior: Assign numerical value to each letter in user's word.
+    Input: 'i','n'
+    Output: 1 , 1
+
+4.  Behavior: Add values of letters together.
+    Input: 1 , 1
+    Output: 2
