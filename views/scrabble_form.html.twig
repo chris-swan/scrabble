@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <title>Scrabble Scores</title>
+    </head>
+    <body>
+        <div class='container'>
+            <h1>What's your word worth?</h1>
+            <form action='/'>
+                <div class='form-group'>
+                    <label for='word'>Your word:</label>
+                    <input id='word' name='word' class='form-control' type='text'>
+                </div>
+                <button type='submit' class='btn btn-success'>Score me!</button>
+            </form>
+
+            <h2>Your word is worth {{ output }} point(s)!</h2>
+        </div>
+    </body>
+</html>
